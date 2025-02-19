@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego del Gato</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="src/estilos/style.css">
 </head>
 <body>
     <div id="centrado">
-    
-    <h1 align="center"> Tic Tac Toe </h1>
-
-    <div id="tablero">
+        <h1>Tic-Tac-Toe</h1>
+    <div class="tablero">
         <div class="cuadro" id="cuadro0" ></div>
         <div class="cuadro" id="cuadro1"></div>
         <div class="cuadro" id="cuadro2"></div>
@@ -22,10 +20,19 @@
         <div class="cuadro" id="cuadro7"></div>
         <div class="cuadro" id="cuadro8"></div>
     </div>
-<div id="mensaje"></div>
-<button id="reiniciar">Reiniciar Juego</button>
-   </div>
+    <div id="mensaje"></div>
+    
+    <div id="estadisticas">
+        <h2>Estadísticas</h2>
+        <p>Victorias Jugador: <span id="victoriasJugador">0</span></p>
+        <p>Victorias Computadora:<span id="victoriasComputadora">0</span></p>
+        <p>Empates: <span id="empates">0</span></p>
+        <button id="reiniciar">Reiniciar Juego</button>
+    </div>
+    </div>
+    
+<script src="src/js/index.js"></script>
 
-    <script src="JS/prueba.js"></script>
+ 
 </body>
 </html>
